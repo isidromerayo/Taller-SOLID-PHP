@@ -5,7 +5,7 @@ namespace Test\TallerSOLID;
  *
  * @author [author] <[email]>
  */
-class StringCalculatorTest extends \PHPUnit_Framework_TestCase
+class AStringCalculator extends \PHPUnit_Framework_TestCase
 {
     private $calculator;
 
@@ -16,7 +16,7 @@ class StringCalculatorTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function emptyStringSumZero()
+    public function willReturnZeroIfTakeEmptyString()
     {
         $result = $this->calculator->add('');
         $this->assertEquals(0, $result);

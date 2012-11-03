@@ -8,14 +8,21 @@ class StringCalculator
         if (empty($number)) {
             return 0;
         }
-        $parser = ParserStringCalculator::splitStringBySeparator($number);
+        $parser = $this->parseString($number);
         $result = $this->sum($parser);
         return $result;
     }
 
     private function parseString($number)
     {
-        return split(',', $number);
+        $result = array();
+        $tam = strlen($number);
+        for ($i=0; $i < $tam ; $i++) {
+            if ($number[$i] !== ',' ) {
+                $result[] = $number[$i];
+            }
+        }
+        return $result;
     }
 
     private function sum($numbers) {
