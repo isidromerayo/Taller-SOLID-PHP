@@ -1,0 +1,27 @@
+{
+    "name": "isidromerayo/taller-solid",
+    "description": "Kata String Calculator",
+    "keywords": ["test","composer","Helper","TDD","PHPUnit","Mock/Stub","xUnit", "kata"],
+    "homepage": "",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Isidro Merayo Castellano",
+            "homepage": "https://bitbucket.org/isidromerayo"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/class-loader": "2.1.x-dev",
+        "phpunit/phpunit": "3.7.x-dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "TallerSOLID": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "vendor/bin"
+    }
+}
