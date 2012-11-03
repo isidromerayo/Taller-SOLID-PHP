@@ -2,7 +2,7 @@
 <phpunit bootstrap="src/bootstrap.php"
          backupGlobals="false"
          backupStaticAttributes="false"
-         strict="true"
+         strict="false"
          colors="true"
          verbose="true">
   <testsuites>

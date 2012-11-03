@@ -16,16 +16,26 @@ class StringCalculator
     private function parseString($number)
     {
         $result = array();
-        $tam = strlen($number);
+        $delimiter = ',';
+        $string = $number;
+        if (strpos($number, '//') === 0) {
+            $delimiter = substr($number, 2, 1);
+            $string = substr($number, 5);
+        }
+        $tam = strlen($string);
         for ($i=0; $i < $tam ; $i++) {
-            if ($number[$i] !== ',' ) {
-                $result[] = $number[$i];
+            if ($string[$i] !== $delimiter ) {
+                $result[] = $string[$i];
             }
         }
         return $result;
     }
+    private function getSeparador()
+    {
 
-    private function sum($numbers) {
+    }
+    private function sum($numbers)
+    {
         $result = 0;
         for ($i=0; $i < sizeof($numbers); $i++) {
             $result += $numbers[$i];

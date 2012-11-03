@@ -24,7 +24,7 @@ class AStringCalculator extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function onlyOneNumber()
+    public function willReturnOneIfTakeOneNumber()
     {
         $result = $this->calculator->add('1');
         $this->assertEquals(1, $result);
@@ -32,9 +32,17 @@ class AStringCalculator extends \PHPUnit_Framework_TestCase
     /**
      * @test
      */
-    public function twoNumbers()
+    public function willReturnThreeIfTakeOneAndTwoNumbers()
     {
         $result = $this->calculator->add('1,2');
         $this->assertEquals(3, $result);
+    }
+    /**
+     * @test
+     */
+    public function willReturnThreeIfTakeOneAndTwoNumbersChangeDefaultSeparator()
+    {
+        $result = $this->calculator->add('//*\n1*4');
+        $this->assertEquals(5, $result);
     }
 }
