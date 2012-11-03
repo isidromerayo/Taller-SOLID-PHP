@@ -8,7 +8,7 @@ class StringCalculator
         if (empty($number)) {
             return 0;
         }
-        $parser = $this->parseString($number);
+        $parser = ParserStringCalculator::splitStringBySeparator($number);
         $result = $this->sum($parser);
         return $result;
     }
