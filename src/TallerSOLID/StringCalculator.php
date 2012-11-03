@@ -30,10 +30,7 @@ class StringCalculator
         }
         return $result;
     }
-    private function getSeparador()
-    {
 
-    }
     private function sum($numbers)
     {
         $result = 0;
