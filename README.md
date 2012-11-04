@@ -1,9 +1,13 @@
-Katayuno Octubre 2012 - Kata Tennis
-==================================
+Taller SOLID - Kata String Calculator
+====================================
 
-http://agilecyl.org/2012/10/11/katayuno-27-de-octubre-valladolid/
-http://www.solveet.com/exercises/Kata-Tennis/13
-http://codingdojo.org/cgi-bin/wiki.pl?KataTennis
+http://www.cyliconvalley.es/2012/10/22/taller-de-solid/
+
+El enfoque del taller es sencillo pero a la vez complejo:
+
+* Explicar los principios SOLID
+* Aplicar estos principios a una Kata de programamción
+* La kata elegida es String Calculator, un clásico con mucha miga.
 
 Instalación
 ===========
@@ -20,7 +24,7 @@ http://getcomposer.org/doc/00-intro.md#globally).
 Usa packagist para distribuir tus fuentes PHP http://packagist.org/, así simplemente
 necesitas un comando :)
 
-$ composer(.phar) create-project isidromerayo/kata-tennis my_project_name
+$ composer(.phar) create-project isidromerayo/taller-solid my_project_name
 
 Git
 ---
@@ -64,11 +68,7 @@ Es necesario instalar una gema de ruby, watchr
 
 $ sudo gem install watchr
 
-Para lanzar 
+Para lanzar
 
 $ watchr ./autotest_watchr.rb
 
-Travis-CI
-=========
-
-Status build: [![Build Status](https://secure.travis-ci.org/isidromerayo/kata-tennis.png)](http://travis-ci.org/isidromerayo/kata-tennis)

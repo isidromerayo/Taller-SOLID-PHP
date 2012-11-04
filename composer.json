@@ -2,7 +2,7 @@
     "name": "isidromerayo/taller-solid",
     "description": "Kata String Calculator",
     "keywords": ["test","composer","Helper","TDD","PHPUnit","Mock/Stub","xUnit", "kata"],
-    "homepage": "",
+    "homepage": "http://www.cyliconvalley.es/2012/10/22/taller-de-solid/",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -13,7 +13,6 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/class-loader": "2.1.x-dev",
         "phpunit/phpunit": "3.7.x-dev"
     },
     "autoload": {
