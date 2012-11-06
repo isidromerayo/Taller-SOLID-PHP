@@ -69,6 +69,7 @@ Por ahora solo funciona con instalación de sistema de phpunit :( aunque hay un 
  https://github.com/Maher4Ever/guard-phpunit/pull/7
 
 $ gem install guard guard-phpunit
+
 $ gem install --version '~> 0.8.8' rb-inotify
 
 Para lanzar desde el directorio raiz del proyecto
