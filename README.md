@@ -73,3 +73,5 @@ Para lanzar desde el directorio raiz del proyecto
 
 $ guard
 
+Recomiendo leer el siguiente artículo para más detalles http://erichogue.ca/2012/09/php/continuous-testing-in-php-with-guard/
+
