@@ -64,11 +64,12 @@ Si utilizas Netbeans PHP, necesitas configurar:
 Autotest
 ========
 
-Es necesario instalar una gema de ruby, watchr
+Es necesario instalar una gema de ruby, guard-phpunit
 
-$ sudo gem install watchr
+$ gem install guard guard-phpunit
+$ gem install --version '~> 0.8.8' rb-inotify
 
-Para lanzar
+Para lanzar desde el directorio raiz del proyecto
 
-$ watchr ./autotest_watchr.rb
+$ guard
 
