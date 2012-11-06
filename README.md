@@ -65,6 +65,8 @@ Autotest
 ========
 
 Es necesario instalar una gema de ruby, guard-phpunit
+Por ahora solo funciona con instalación de sistema de phpunit :( aunque hay un PR para poder personalizar.
+ https://github.com/Maher4Ever/guard-phpunit/pull/7
 
 $ gem install guard guard-phpunit
 $ gem install --version '~> 0.8.8' rb-inotify
